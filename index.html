@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Belajar Web</title>
+</head>
+<body>    
+    <section class="container">
+        <div class="theme-switch">
+            <span id="themeIcon">🌞</span>
+            <label class="switch">
+                <input type="checkbox" id="toggleTheme"> 
+                <span class="theme-slider"></span>
+            </label>
+        </div>
+
+        <div class="dateTime">
+            <span id="tanggal"></span>
+            <span id="jam"></span>
+        </div>
+
+        <h1>Welcome to my world</h1><hr/>
+        <main class="input-area">
+            <input type="text" placeholder="Todo list...." id="inputTodo">
+            <button onclick="masukanTugas()">Add</button><br>
+        </main>
+        <hr/>
+        <ul id="todoList"></ul>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modalText">Pesan</p>
+                <button class="btnClose" onclick="tutupModal()">OK</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
